@@ -1,0 +1,13 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        freq={}
+        for i in range(len(nums)):
+               if nums[i]  in freq:
+                    return True
+               freq[nums[i]]=nums[i]
+        return False
+          
+          
+            
+
+        
